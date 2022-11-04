@@ -53,20 +53,23 @@ class AlertPage extends StatelessWidget {
           content: Text(
               "This blog post has been published. Team members will be able to edit this post and republish changes."),
           actions: [
-            TextButton(
+            OutlinedButton(
               onPressed: () {
                 Navigator.pop(context);
               },
               child: Text(
                 "Cancelar",
-                style: TextStyle(color: Colors.purple, fontSize: 20),
+                style: TextStyle(color: Colors.black, fontSize: 20),
               ),
             ),
-            TextButton(
+            ElevatedButton(
               onPressed: () {},
               child: Text(
                 "Aceptar",
-                style: TextStyle(color: Colors.purple, fontSize: 20),
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
               ),
             ),
           ],
@@ -80,19 +83,34 @@ class AlertPage extends StatelessWidget {
       context: context2,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text("AlertDialog example!!!"),
+          title: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset("assets/images/woman.png"),
+              Text("Your video has been uploades!"),
+            ],
+          ),
           backgroundColor: Colors.white,
-          content: Text("hola 2"),
+          content: Text("You're video has finished uploading and is live"),
           actions: [
-            TextButton(
+            OutlinedButton(
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text("Cancelar"),
+              child: Text(
+                "Cancelar",
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
             ),
-            TextButton(
+            ElevatedButton(
               onPressed: () {},
-              child: Text("Aceptar"),
+              child: Text(
+                "Aceptar",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
             ),
           ],
         );
