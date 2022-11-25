@@ -2,6 +2,8 @@ import 'package:app04_componentes/pages/alert_page.dart';
 import 'package:app04_componentes/pages/avatar_page.dart';
 import 'package:app04_componentes/pages/card_pages.dart';
 import 'package:app04_componentes/pages/cards-2.dart';
+import 'package:app04_componentes/pages/input_pages.dart';
+import 'package:app04_componentes/pages/selection_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,7 +20,7 @@ class HomePage extends StatelessWidget {
             //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 20.0,
+                height: 10.0,
               ),
               Container(
                 height: 200,
@@ -39,12 +41,12 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 10.0,
+                height: 8.0,
               ),
               Text(
                 "Flutter Components",
                 style: GoogleFonts.poppins(
-                  fontSize: 22.0,
+                  fontSize: 18.0,
                   letterSpacing: 1,
                   //fontWeight: FontWeight.bold,
                 ),
@@ -54,7 +56,7 @@ class HomePage extends StatelessWidget {
                 child: Divider(),
               ),
               const SizedBox(
-                height: 10.0,
+                height: 3.0,
               ),
               ItemComponentWidget(
                 title: "Avatar",
@@ -71,6 +73,14 @@ class HomePage extends StatelessWidget {
               ItemComponentWidget(
                 title: "Card 2",
                 toPage: CardsPage(),
+              ),
+              ItemComponentWidget(
+                title: "Imput page",
+                toPage: ImputPage(),
+              ),
+              ItemComponentWidget(
+                title: "Data Piker",
+                toPage: SelectionPage(),
               ),
             ],
           ),
@@ -90,8 +100,8 @@ class ItemComponentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(
-        horizontal: 15.0,
-        vertical: 15.0,
+        horizontal: 10.0,
+        vertical: 0.5,
       ),
       decoration: BoxDecoration(
         color: Colors.white,

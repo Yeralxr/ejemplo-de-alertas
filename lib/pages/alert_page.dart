@@ -44,7 +44,7 @@ class AlertPage extends StatelessWidget {
                 backgroundImage: AssetImage("assets/images/block.png"),
               ),
               SizedBox(
-                height: 30.0,
+                height: 20.0,
               ),
               Text("Blog post published"),
             ],
