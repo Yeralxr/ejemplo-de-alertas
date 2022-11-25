@@ -65,6 +65,11 @@ flutter:
     - assets/images/
     - assets/images/block.png
     - assets/images/woman.png
+    - assets/images/card-1.png
+    - assets/images/card-2.png
+    - assets/images/frasco.png
+    - assets/images/on.png
+    - assets/images/off.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
